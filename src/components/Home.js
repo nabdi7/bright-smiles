@@ -11,11 +11,11 @@ import card3 from '../images/card3.webp';
 import card4 from '../images/card6.webp'
 import card5 from '../images/card5.webp'
 import card6 from '../images/card4.webp'
-import image1 from '../images/gallery1.jpeg';
-import image2 from '../images/gallery2.jpeg';
-import image3 from '../images/gallery1.jpeg';
-import image4 from '../images/gallery4.jpeg';
-import image5 from '../images/gallery5.jpeg';
+import image1 from '../images/gallery1.jpg';
+import image2 from '../images/gallery2.jpg';
+import image3 from '../images/gallery1.jpg';
+import image4 from '../images/gallery4.jpg';
+import image5 from '../images/gallery5.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullhorn, faCheck } from '@fortawesome/free-solid-svg-icons';
 import applicationPDF from '../application.pdf';
