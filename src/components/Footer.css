@@ -33,7 +33,7 @@
     text-align: justify;
 }
 
-.footer-col h4 {
+.footer-col h3 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -42,7 +42,7 @@
     position: relative;
 }
 
-.footer-col h4::before {
+.footer-col h3::before {
     content: '';
     position: absolute;
     left: 0; 
@@ -63,7 +63,10 @@ ul {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    color: #bbbbbb;
+    color: #e0e0e0;
+}
+.links {
+    cursor: pointer;
 }
 
 .footer-col ul li svg {
@@ -76,9 +79,10 @@ ul {
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #e0e0e0;
     display: block;
     transition: all 0.3s ease;
+    
 }
 
 .footer-col ul li a:hover {
@@ -121,11 +125,11 @@ ul {
 }
 .copyright a {
     text-decoration: underline;
-    color: #006666; 
+    color: #66c2c2; 
 }
 
 .copyright a:hover {
-    color: #008080; 
+    color: #80d4d4; 
 }
 
 /* Responsive */

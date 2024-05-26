@@ -101,7 +101,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: brown; 
-    color: white;
+ 
     text-decoration: none;
     border-radius: 10px;
     font-size: 16px;
@@ -113,13 +113,6 @@ body {
 .enroll-kid {
     display: flex;
     align-items: center;
-}
-.contact-icon {
-    background-color: #006666;
-    border-radius: 20px;
-    padding: 10px 14px;
-    font-family: Filled Icon, sans-serif;
-    font-size: 1.3rem;
 }
 .enroll-kid svg {
     margin-right: 7px; 
@@ -536,7 +529,7 @@ ol, ul {
         transform: translate3d(30px, -30px, 0) scale3d(1.2, 1.2, 1.2) rotateZ(5deg);
     } */
     50% {
-        transform: translate3d(60px, -60px, 0) scale3d(1, 1, 1) rotateZ(0deg);
+        transform: translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateZ(0deg);
     }
     /* 75% {
         transform: translate3d(30px, -30px, 0) scale3d(1.2, 1.2, 1.2) rotateZ(-5deg);
@@ -1018,7 +1011,16 @@ textarea:focus::placeholder {
         /* width: 61%; */
         text-align: left;
     }
-
+   
+    .animated-circle.top-left {
+        top: 10px; 
+        left: 10px; 
+    }
+    .animated-circle.bottom-right {
+        bottom: 10px; 
+        right: 10px; 
+    }
+    
     /* gallery */
     .gallery-section {
         padding-top: 60px;

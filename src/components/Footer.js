@@ -1,25 +1,24 @@
 import './Footer.css';
-import logo from "../images/logo11.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll'; 
 
 const Footer = () => {
     return (
         <>
             <footer className="footer">
                 <div className="container">
-                    <div className="footer-col">
-                        <h4>Quick Links</h4>
+                    <div className="footer-col links">
+                        <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Program</a></li>
-                            <li><a href="#">Contact</a></li>
-                            {/* <li><a href="#">Enroll now</a></li> */}
+                            <li><Link to="aboutSection" smooth={true} duration={1000}>About</Link></li>
+                            <li><Link to="servicesSection" smooth={true} duration={1000}>Program</Link></li>
+                            <li><Link to="contactSection" smooth={true} duration={1000}>Contact</Link></li>
                         </ul>
                     </div>
                     <div className="footer-col">
-                        <h4>Get In Touch</h4>
+                        <h3>Get In Touch</h3>
                         <ul>
                             <li><FontAwesomeIcon icon={faLocationDot} /> <a href="https://www.google.com/maps/place/30124+53rd+Ave+S,+Auburn,+WA+98001/@47.3314921,-122.2696509,17z/data=!3m1!4b1!4m6!3m5!1s0x549059b448a3c987:0x5acb15e7c88830ef!8m2!3d47.3314921!4d-122.2696509!16s%2Fg%2F11c4_3wj9_?entry=ttu">30124 53rd Ave S, Auburn, WA</a></li>
                             <li><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:brightchildcare98@gmail.com">brightchildcare98@gmail.com</a></li>
@@ -27,7 +26,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footer-col">
-                        <h4>Hours of operation</h4>
+                        <h3>Hours of operation</h3>
                         <ul>
                             <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
                             <li>Saturday: Closed</li>
@@ -46,15 +45,15 @@ const Footer = () => {
                                 alt='Bright Smiles Home Childcare'
                             /> 
                         </div> */}
-                        <h4>Follow Us</h4>
+                        <h3>Follow Us</h3>
                         <div className="social-links">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
                                 <FontAwesomeIcon icon={faFacebookF} />
                             </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> 
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Youtube"> 
                                 <FontAwesomeIcon icon={faYoutube} />
                             </a>
                         </div>

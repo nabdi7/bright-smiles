@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, Element } from 'react-scroll';
+import { Helmet } from 'react-helmet';
 import './Home.css';
 import emailjs from 'emailjs-com'; 
 import banner from '../images/kid8.png';
@@ -22,6 +23,8 @@ import applicationPDF from '../application.pdf';
 import { useInView } from 'react-intersection-observer';
 
 const Home = () => { 
+    const [activeSection, setActiveSection] = useState('home'); 
+
     const handleDownload = () => {
         window.open(applicationPDF, '_blank');
     };
@@ -95,8 +98,17 @@ const Home = () => {
     const [aboutRef, aboutInView] = useInView({ triggerOnce: true });
     const [servicesRef, servicesInView] = useInView({ triggerOnce: true });
 
+    // Function to handle section change
+    const handleSectionChange = (section) => {
+        setActiveSection(section);
+    };
+
     return (
         <>
+        <Helmet>
+            <title>Bright Smiles Home Childcare</title>
+            <meta name="description" content="Welcome to Bright Smiles Home Childcare, a nurturing and supportive learning environment for children in Auburn, WA." />
+        </Helmet>
         {/* hero */}
         <div className="hero-container">
             <div className="hero-row">
@@ -120,6 +132,13 @@ const Home = () => {
         <Link to='aboutSection' smooth={true} duration={1000}></Link>
         <Element name='aboutSection'>
             <section className={`bigBox slide-from-left ${aboutInView ? 'visible' : ''}`} ref={aboutRef}>
+                {/* Helmet for the about section */}
+                {activeSection === 'about' && (
+                    <Helmet>
+                    <title>About Us - Bright Smiles Home Childcare</title>
+                    <meta name="description" content="Learn more about Bright Smiles Home Childcare, a nurturing and supportive childcare center in Auburn, WA." />
+                    </Helmet>
+                )}
                 <div className="aboutSection">
                     <div className="leftSide"> 
                         <h1> Bright Smiles Childcare </h1>
@@ -190,6 +209,12 @@ const Home = () => {
         <Link to='servicesSection' smooth={true} duration={1000}></Link>
         <Element name='servicesSection'>
             <section class="service-section">
+                {activeSection === 'services' && (
+                    <Helmet>
+                    <title>Our Services - Bright Smiles Home Childcare</title>
+                    <meta name="description" content="Explore our comprehensive childcare and preschool services at Bright Smiles Home Childcare in Auburn, WA." />
+                    </Helmet>
+                )}
                 <div className="base-container width-container">
                 <div class="animated-circle top-left"></div>
                 <div class="animated-circle bottom-right"></div>
@@ -203,7 +228,7 @@ const Home = () => {
                                 <img className="card-image" src={card1} alt="Childcare programs at Bright Smiles Home Childcare" />
                             </div>
                             <div class="card-text">
-                                <h3 className="card-heading">Engaging Activities</h3>
+                                <h4 className="card-heading">Engaging Activities</h4>
                                 <p className="card-paragraph">Encouraging active participation and hands-on learning experiences to ignite curiosity and creativity.</p>
                             </div>
                         </div>
@@ -212,7 +237,7 @@ const Home = () => {
                                 <img className="card-image" src={card2} alt="Childcare programs at Bright Smiles Home Childcare" />
                             </div>
                             <div class="card-text">
-                                <h3 className="card-heading">Professional Teachers</h3>
+                                <h4 className="card-heading">Professional Teachers</h4>
                                 <p className="card-paragraph">Our experienced teacher provide personalized guidance and support to nurture each child's unique potential.</p>
                             </div>
                         </div>
@@ -221,7 +246,7 @@ const Home = () => {
                                 <img className="card-image" src={card3} alt="Childcare programs at Bright Smiles Home Childcare" />
                             </div>
                             <div class="card-text">
-                                <h3 className="card-heading">Education Program</h3>
+                                <h4 className="card-heading">Education Program</h4>
                                 <p className="card-paragraph">A well-rounded curriculum designed to stimulate intellectual growth and foster holistic development.</p>
                             </div>
                         </div>
@@ -230,7 +255,7 @@ const Home = () => {
                                 <img className="card-image" src={card4} alt="Childcare programs at Bright Smiles Home Childcare" />
                             </div>
                             <div class="card-text">
-                                <h3 className="card-heading">All in One Place Together</h3>
+                                <h4 className="card-heading">All in One Place Together</h4>
                                 <p className="card-paragraph">An inclusive setting where children learn and grow together, fostering collaboration and social skills.</p>
                             </div>
                         </div>
@@ -239,7 +264,7 @@ const Home = () => {
                                 <img className="card-image" src={card5} alt="Childcare programs at Bright Smiles Home Childcare" />
                             </div>
                             <div class="card-text">
-                                <h3 className="card-heading">After School Program</h3>
+                                <h4 className="card-heading">After School Program</h4>
                                 <p className="card-paragraph">Promote physical fitness, teamwork, and sportsmanship through our engaging program.</p>
                             </div>
                         </div>
@@ -248,7 +273,7 @@ const Home = () => {
                                 <img className="card-image" src={card6} alt="Childcare programs at Bright Smiles Home Childcare" />
                             </div>
                             <div class="card-text">
-                                <h3 className="card-heading">Easy To Learn</h3>
+                                <h4 className="card-heading">Easy To Learn</h4>
                                 <p className="card-paragraph">Access a wealth of resources and tools designed to accommodate diverse learning styles and abilities, ensuring every child's success.</p>
                             </div>
                         </div>
@@ -307,6 +332,12 @@ const Home = () => {
         <Link to='contactSection' smooth={true} duration={1000}></Link>
         <Element name='contactSection'>
             <section className="booking-section">
+                {activeSection === 'contact' && (
+                    <Helmet>
+                    <title>Contact Us - Bright Smiles Home Childcare</title>
+                    <meta name="description" content="Get in touch with Bright Smiles Home Childcare to book a tour or learn more about our childcare programs and services." />
+                    </Helmet>
+                )}
                 <div className="booking-container">
                     <div className="booking-info">
                         <h2 className="sub-title">BOOK A TOUR</h2>
