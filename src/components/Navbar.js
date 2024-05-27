@@ -38,18 +38,14 @@ const Navbar = () => {
     <>
       <header class="sub-header"> 
         <div class="container"> 
-            {/* <div class="col-lg-8 col-md-8"> */}
               <ul class="info">
                 <li><FontAwesomeIcon icon={faEnvelope} className="icon-style" /> <a href="mailto:brightchildcare98@gmail.com">Brightchildcare98@gmail.Com</a></li>
-                <li><FontAwesomeIcon icon={faLocationDot} className="icon-style" /> <a href="https://www.google.com/maps/place/30124+53rd+Ave+S,+Auburn,+WA+98001/@47.3314921,-122.2696509,17z/data=!3m1!4b1!4m6!3m5!1s0x549059b448a3c987:0x5acb15e7c88830ef!8m2!3d47.3314921!4d-122.2696509!16s%2Fg%2F11c4_3wj9_?entry=ttu">30124 53rd Ave S, Auburn, WA</a></li>
+                <li className="address"><FontAwesomeIcon icon={faLocationDot} className="icon-style" /> <a href="https://www.google.com/maps/place/30124+53rd+Ave+S,+Auburn,+WA+98001/@47.3314921,-122.2696509,17z/data=!3m1!4b1!4m6!3m5!1s0x549059b448a3c987:0x5acb15e7c88830ef!8m2!3d47.3314921!4d-122.2696509!16s%2Fg%2F11c4_3wj9_?entry=ttu">30124 53rd Ave S, Auburn, WA</a></li>
               </ul>
-            {/* </div> */}
             <div class="col-lg-4 col-md-4">
               <ul class="social-links">
-                <li><a href="tel:+12062223462"><FontAwesomeIcon icon={faPhone} /> </a> (206) 222 3462</li>
-                {/* <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /> </a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /> </a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faYoutube} /></a></li> */}
+                <li><a href="tel:+12062223462"><FontAwesomeIcon icon={faPhone} className="icon-style"/> </a> (206) 483-4129</li>
+                {/* <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /> </a></li>*/}
               </ul>
             </div>
         </div>

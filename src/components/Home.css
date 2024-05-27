@@ -177,7 +177,11 @@ body {
     font-size: 19px;
     padding-bottom: 15px;
 }
+.leftSide p a {
+    color: #000;
+    text-decoration: none;
 
+}
 .leftSide h3, .leftSide h2, .leftSide h1 {
     padding: 10px 0 10px 0;
     text-align: left;
@@ -887,11 +891,11 @@ textarea:focus::placeholder {
     }
 
     .leftSide h1 {
-        font-size: 28px; 
+        font-size: 27.6px; 
     }
 
     .leftSide p {
-        font-size: 15px; 
+        font-size: 18px; 
     }
 
     .rightSide {
@@ -904,11 +908,13 @@ textarea:focus::placeholder {
     .rightSide h3 {
         font-size: 24px; 
         text-align: left;
+        font-size: 26px;
     }
 
     .rightSide ul li span {
         display: block;
         color: #a1cc3a;
+        font: normal 17px / 25px 'Montserrat_reg';
         text-decoration: none;
         box-sizing: border-box;
         padding: 5px 5px 5px;
@@ -919,7 +925,9 @@ textarea:focus::placeholder {
         width: 60%; 
         margin: 16px 0; 
         text-align: center; 
+        font: normal 17px / 25px 'Montserrat_reg';
     }
+    
     /* qualified  */
     .qualified {
         width: 100%;
@@ -973,7 +981,7 @@ textarea:focus::placeholder {
     }
     .parts p {
         color: #777;
-        font-size: 13.5px;
+        font-size: 16px;
         padding: 15px 0 0px 30px;
     }
 
@@ -1047,7 +1055,7 @@ textarea:focus::placeholder {
     }
     .big-image {
         object-position: 50% 42%;
-        /* height: 440px; */
+        height: 300px;
     }
 
     /* contact us  */
@@ -1070,6 +1078,17 @@ textarea:focus::placeholder {
     .booking-form form {
         width: 100%;
         max-width: 400px; 
+    }
+    .booking-info .book-now-btn {
+        background-color: #008080;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 20px;
+        display: block; 
+        margin: 0;
     }
 
 }
@@ -1098,6 +1117,7 @@ textarea:focus::placeholder {
         width: 100%;
         max-width: 400px; 
     }
+    
 }
 
 /* ipad air, pro,  surface pro, next hub*/
@@ -1169,7 +1189,7 @@ textarea:focus::placeholder {
     }
     .leftSide h1 {
         color: brown;
-        /* font-size: 30px; */
+        font-size: 30px;
         font-family: 'Dosis_bold';
         text-transform: uppercase;
         padding: 0 0 10px;
@@ -1180,8 +1200,11 @@ textarea:focus::placeholder {
         color: #111;
         font-family: 'Montserrat_reg';
         text-align: left;
-        /* font-size: 17px; */
+        font-size: 19px;
         padding-bottom: 15px;
+    }
+    .leftSide li {
+        font-size: 19px;
     }
     .rightSide {
         width: 100%; 
@@ -1197,11 +1220,13 @@ textarea:focus::placeholder {
 
     .rightSide h3 {
         text-align: left;
+        font-size: 27px;
     }
 
     .rightSide ul li span {
         display: block;
         color: #a1cc3a;
+        font: normal 19px / 25px 'Montserrat_reg';
         text-decoration: none;
         box-sizing: border-box;
         padding: 5px 5px 5px;
@@ -1212,7 +1237,9 @@ textarea:focus::placeholder {
         width: 30%; 
         margin: 16px 0; 
         text-align: center; 
+        font: normal 19px / 25px 'Montserrat_reg';
     }
+
     /* qualified  */
     .qualified {
         width: 100%;
@@ -1232,7 +1259,7 @@ textarea:focus::placeholder {
     .parts p {
         color: #777;
         font-family: 'Montserrat_reg';
-        /* font-size: 16px; */
+        font-size: 18px;
         padding: 15px 0 0px 30px;
     }
     .left-text {
@@ -1244,7 +1271,7 @@ textarea:focus::placeholder {
         padding: 0px 70px 0px 15px;
         color: #fff;
         font-family: 'Montserrat_reg';
-        /* font-size: 43px; */
+        font-size: 43px;
         display: inline-block;
         text-transform: uppercase;
         margin-right: 70px;
@@ -1254,7 +1281,7 @@ textarea:focus::placeholder {
     .parts h5 {
         color: #13d3d7;
         font-family: 'Montserrat_reg';
-        /* font-size: 43px; */
+        font-size: 43px;
         display: block;
         text-transform: uppercase;
         margin-right: 95px;
@@ -1348,6 +1375,13 @@ textarea:focus::placeholder {
     .big-gallery-image {
         width: 100%;
     }
+    .big-image {
+        object-fit: cover;
+        border-radius: 25px;
+        width: 100%;
+        height: 300px;
+        transition: transform .3s;
+    }
     /* Contact section */
     .booking-info, .booking-form {
         padding: 20px;
@@ -1371,4 +1405,29 @@ textarea:focus::placeholder {
     .booking-form button {
         width: 100%;
     }  
+
+    .description {
+        font-size: 17px;
+        color: #666;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .benefits-list li {
+        font-size: 17px;
+        color: #333;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .booking-info .book-now-btn {
+        background-color: #008080;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 20px;
+        display: block; 
+        margin: 0;
+    }
 }

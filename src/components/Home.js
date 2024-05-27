@@ -146,7 +146,7 @@ const Home = () => {
                         <p>Welcome to Bright Smiles Home Childcare, a nurturing and supportive learning environment for children in Auburn, WA. We pride ourselves on providing high-quality childcare and preschool services in a warm and inviting atmosphere.</p>
                         <p>At Bright Smiles Home Childcare, we believe in fostering a love for learning through play-based activities and hands-on experiences. Our dedicated team of educators focuses on nurturing each child's individual interests, talents, and learning styles.</p>
                         <p>We are committed to promoting social, emotional, and cognitive development in children, helping them build confidence and independence. With our comprehensive curriculum and engaging learning opportunities, we strive to prepare children for success in school and in life.</p>
-                        <p>Come join us at Bright Smiles Home Childcare, where every child is valued, supported, and encouraged to reach their full potential.</p>
+                        <p>Come join us at Bright Smiles Home Childcare, where every child is valued, supported, and encouraged to reach their full potential. Feel free to contact us at <a href='tel:+12064834129'><b>(206)483-4129</b></a></p>
                         <h2><strong>Highlights/Quick Facts:</strong></h2>
                         <ul>
                             <li>Comprehensive and Affordable Tuition</li>
@@ -310,23 +310,21 @@ const Home = () => {
 
 
         {/* testimonials */}
-        <section className='testimonials'>
-        
-
-        </section>
+        {/* <section className='testimonials'>
+        </section> */}
         
         {/* location map*/}
-        <div class="mapSection">
+        <section class="mapSection">
             <iframe 
             title="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.121822826809!2d-122.2696509!3d47.3314921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549059b448a3c987%3A0x5acb15e7c88830ef!2s30124%2053rd%20Ave%20S%2C%20Auburn%2C%20WA%2098001!5e0!3m2!1sen!2sus!4v1716182915476!5m2!1sen!2sus"
             width="600" 
             height="450" 
             style={{border:0}} 
-            allowFullScreen="" 
-            loading="lazy">
+            allowFullScreen="">
+            {/* loading="lazy"> */}
             </iframe>
-        </div>
+        </section>
         
         {/* contact us  */}
         <Link to='contactSection' smooth={true} duration={1000}></Link>
