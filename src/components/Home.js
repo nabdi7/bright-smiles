@@ -146,7 +146,7 @@ const Home = () => {
                         <p>Welcome to Bright Smiles Home Childcare, a nurturing and supportive learning environment for children in Auburn, WA. We pride ourselves on providing high-quality childcare and preschool services in a warm and inviting atmosphere.</p>
                         <p>At Bright Smiles Home Childcare, we believe in fostering a love for learning through play-based activities and hands-on experiences. Our dedicated team of educators focuses on nurturing each child's individual interests, talents, and learning styles.</p>
                         <p>We are committed to promoting social, emotional, and cognitive development in children, helping them build confidence and independence. With our comprehensive curriculum and engaging learning opportunities, we strive to prepare children for success in school and in life.</p>
-                        <p>Come join us at Bright Smiles Home Childcare, where every child is valued, supported, and encouraged to reach their full potential. Feel free to contact us at <a href='tel:+12064834129'><b>(206)483-4129</b></a></p>
+                        <p>Join us at Bright Smiles Home Childcare, where every child is valued, supported and encouraged. Contact us at <a href='tel:+12064834129'><b>(206)483-4129</b></a> or <a href="mailto:brightchildcare98@gmail.com"><b>brightchildcare98@gmail.Com</b></a></p>
                         <h2><strong>Highlights/Quick Facts:</strong></h2>
                         <ul>
                             <li>Comprehensive and Affordable Tuition</li>
