@@ -14,7 +14,8 @@ body {
 .sub-header {
     background-color: #fff;
     padding: 15px 0px;
-    /* border-bottom: 1px solid #eee; */
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
 }
   
 .container {
@@ -186,7 +187,7 @@ body {
     font-size: 1.5rem;
 }
 @media screen and (max-width: 767px) {
-    .container {
+    /* .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -206,7 +207,7 @@ body {
     }
     .sub-header ul.info li.address {
         display: none;
-    }
+    } */
     .sub-header {
         display: none;
     }
@@ -286,7 +287,8 @@ body {
         align-items: flex-start;
     }
     .sub-header {
-        background-color:#f7f7f7;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 0px;
     }
     .sub-header ul.info {
         margin-bottom: 5px;
