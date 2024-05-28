@@ -101,7 +101,6 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: brown; 
- 
     text-decoration: none;
     border-radius: 10px;
     font-size: 16px;
@@ -635,7 +634,9 @@ ol, ul {
     width: 100%;
     height: 470px;
     transition: transform .3s;
+    margin-bottom: 10px;
 }
+
 
 /* testimonials */
 
@@ -1051,11 +1052,18 @@ textarea:focus::placeholder {
 
     .medium-image, .small-image {
         /* width: 100%; */
-        height: 200px;
+        height: 250px;
+        margin-bottom: 5px;
+    }
+    .img-position {
+        /* width: 100%; */
+        height: 250px;
+        object-position: 50% 35%;
     }
     .big-image {
         object-position: 50% 42%;
         height: 300px;
+        margin-bottom: 5px;
     }
 
     /* contact us  */
@@ -1365,6 +1373,11 @@ textarea:focus::placeholder {
     }
     .medium-image, .small-image {
         margin-bottom: 5px;
+    }
+    .img-position {
+        /* width: 100%; */
+        height: 250px;
+        object-position: 50% 35%;
     }
     .medium-gallery-image {
         width: 65%;

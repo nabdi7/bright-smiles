@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from'react-router-dom';
 import Home from './components/Home';
-import Enroll from './components/Enroll';
+import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route index element={<Home />}  />
-          <Route path="/enroll" element={<Enroll />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

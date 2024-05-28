@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { Link as ScrollLink } from 'react-scroll';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../images/logo10.png';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -44,7 +44,7 @@ const Navbar = () => {
               </ul>
             <div class="col-lg-4 col-md-4">
               <ul class="social-links">
-                <li><a href="tel:+12062223462"><FontAwesomeIcon icon={faPhone} className="icon-style"/> </a> (206) 483-4129</li>
+                <li><a href="tel:+12064834129"><FontAwesomeIcon icon={faPhone} className="icon-style"/> </a> (206) 483-4129</li>
                 {/* <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /> </a></li>*/}
               </ul>
             </div>
@@ -57,44 +57,54 @@ const Navbar = () => {
           <a href='/'> 
             <img
               src={logo}
-              width="250px" height="auto"
+              width="250px"
+              height="auto"
               alt='Logo'
             />
           </a>
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <ul>
-            <li>
-              <ScrollLink to='homeSection' smooth={true} duration={1000} onClick={closeMenu}>
-                Home
-              </ScrollLink>
-            </li>
-            <li>
-              <ScrollLink to='aboutSection' smooth={true} duration={1000} onClick={closeMenu}>
-                About
-              </ScrollLink>
-            </li>
-            <li>
-              <ScrollLink to='servicesSection' smooth={true} duration={1000} onClick={closeMenu}>
-                Programs
-              </ScrollLink>
-            </li>
-            <li>
-              {/* <Link to="/enroll" className="active">
-              Contact
-              </Link> */}
-              <ScrollLink to='contactSection' smooth={true} duration={1000} className="bn59" onClick={closeMenu}>
-                Contact
-              </ScrollLink>
-            </li>
+            {/* Check if on Home page */}
+            {window.location.pathname === '/' ? (
+              <>
+                {/* Smooth scrolling within Home page */}
+                <li>
+                  <ScrollLink to='homeSection' smooth={true} duration={1000} onClick={closeMenu}>
+                    Home
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink to='aboutSection' smooth={true} duration={1000} onClick={closeMenu}>
+                    About
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink to='servicesSection' smooth={true} duration={1000} onClick={closeMenu}>
+                    Programs
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink to='contactSection' smooth={true} duration={1000} className="bn59" onClick={closeMenu}>
+                    Contact
+                  </ScrollLink>
+                </li>
+              </>
+            ) : (
+              // If not on Home page, use regular links for navigation
+              <>
+                <li><Link to='/' onClick={closeMenu}>Home </Link> </li>
+                <li><Link to='/' onClick={closeMenu}> About </Link></li>
+                <li><Link to='/' onClick={closeMenu}> Programs</Link></li>
+                <li><Link to='/' onClick={closeMenu} className="bn59"> Contact </Link></li>
+              </>
+            )}
           </ul>
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} style={{ fontSize: "30px" }}/>
         </div>
       </nav>
-      
-
     </>
   );
 };

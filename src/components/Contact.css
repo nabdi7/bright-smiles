@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
+
+/* note: instead of pading use lines */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* background-color: #f0f0f0; */
+}
+.backgroundImage {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/gallery1.jpg'); /* Update this with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.global-title {
+    text-align: center;
+    font-size: 38px;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.global-title::after {
+    content: "";
+    display: block;
+    width: 90px; 
+    align-items: center;
+    border-bottom: 2px solid #008080;  
+    position: relative;
+    margin-top: 20px;
+    left: 30%; 
+}
+.content-container {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between; 
+    margin-top: 100px;
+}
+
+.left-side {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* margin-right: 20px; */
+}
+
+.content-box {
+    margin-bottom: 20px;
+    padding: 20px; 
+    text-align: left;
+}
+
+.content-title {
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.content-description {
+    margin-bottom: 10px;
+}
+
+.content-description a {
+    text-decoration: none;
+    color: black;
+}
+.content-info {
+    color: #aaaaaa;
+    text-align: left;
+    align-items: flex-start;
+}
+.information {
+    margin-top: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 380px;
+}
+
+.information .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #006666; 
+}
+
+.text .content-description {
+    margin: 0;
+    font-size: 16px;
+}
+
+.text .content-description.phone, .text .content-description.email-address {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+.schedule-hours {
+    list-style: none;
+}
+
+.schedule-hours li {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.right-side {
+    width: 100%; 
+    padding: 20px;
+    /* margin-left: 50px; */
+    
+}
+.contact-box {
+    background-color: #008080;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.get-in-touch {
+   font-size: 26px;
+   margin-bottom: 30px;
+   color: #ffffff;
+   /* text-align: left; */
+}
+.contact-box form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.contact-box form div {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-box input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+.contact-box input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+textarea:focus::placeholder {
+    top: -20px; 
+    font-size: 12px; 
+    color: #555; 
+}
+.contact-box input[type="message"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    height: 200px;
+}
+.contact-box input[type="message"]:focus::placeholder,
+textarea:focus::placeholder {
+    top: -20px; 
+    font-size: 12px; 
+    color: #555; 
+}
+.contact-box button {
+    background-color: #004d4d;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.contact-box button:hover {
+    background-color: #003333;
+}
+.thank-you-message {
+    margin-top: 1rem;
+    color: #A9B5F9; 
+    font-size: 15px;
+}
+.location {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.location-map iframe {
+    width: 90%;
+    height: 450px;
+    border: none;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .content-container {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .content-box {
+        margin-bottom: 20px;
+        padding: 20px; 
+        text-align: left; 
+        width: 100%;
+        max-width: 100%;
+    }
+   
+    .left-side .information {
+        display: flex;
+        width: 100%; 
+        padding: 30px; 
+    }
+    
+    .contact-box form {
+        width: 100%;
+        max-width: 400px; 
+    }
+
+    .location-map iframe {
+        width: 95%;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .content-container {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+}

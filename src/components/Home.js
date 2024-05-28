@@ -14,9 +14,12 @@ import card5 from '../images/card5.webp'
 import card6 from '../images/card4.webp'
 import image1 from '../images/gallery1.jpg';
 import image2 from '../images/gallery2.jpg';
-import image3 from '../images/gallery1.jpg';
+import image3 from '../images/img1.jpg';
 import image4 from '../images/gallery4.jpg';
 import image5 from '../images/gallery5.jpg';
+import image6 from '../images/img2.jpg';
+import image7 from '../images/img11.jpg';
+import image8 from '../images/img8.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullhorn, faCheck } from '@fortawesome/free-solid-svg-icons';
 import applicationPDF from '../application.pdf';
@@ -71,12 +74,12 @@ const Home = () => {
 
     const subtitles = [
         "Discover, Explore, and Learn Together",
-        "Unlock Your Child's Potential",
+        "Explore, Learn, and Grow Together",
     ];
 
     const descriptions = [
         "At Bright Smiles Childcare, we provide a nurturing and safe environment where young minds can flourish.",
-        "Creative Minds Preschool is dedicated to unlocking your child's potential through innovative teaching methods and personalized attention.",
+        "We're dedicated to providing a loving and secure space where young minds can grow.",
     ];
 
     const images = [
@@ -117,7 +120,7 @@ const Home = () => {
                     <h1 className="hero-bigger">{subtitles[backgroundIndex]}</h1>
                     <p className="hero-p">{descriptions[backgroundIndex]}</p>
                     <div className="enroll-kid">
-                        <a className="hero-button" href="/">Enroll your kid</a>
+                        <a className="hero-button" href="/contact">Enroll your kid</a>
                         {/* <FontAwesomeIcon icon={faPhone} className="contact-icon" /> */}
                         {/* <a href="tel:+18018158685" className="contact-icon">(206) 483-4129</a> */}
                     </div>
@@ -293,16 +296,20 @@ const Home = () => {
                 <div className="left-gallery">
                     <div className="medium-gallery-image w-inline-block">
                         <img className="medium-image" src={image1} alt="daycare programs at Bright Smiles Home Childcare" />
+                        <img className="small-image img-position" src={image8} alt="daycare programs at Bright Smiles Home Childcare" />
                         <img className="medium-image" src={image4} alt="daycare programs at Bright Smiles Home Childcare" />
                     </div>
                     <div className="small-gallery-image w-inline-block">
                         <img className="small-image" src={image2} alt="daycare programs at Bright Smiles Home Childcare" />
-                        <img className="small-image" src={image3} alt="daycare programs at Bright Smiles Home Childcare" />
+                        <img className="small-image" src={image7} alt="daycare programs at Bright Smiles Home Childcare" />                        
+                        <img className="small-image img-position" src={image6} alt="daycare programs at Bright Smiles Home Childcare" />
+
                     </div>
                 </div>
                 <div className="right-gallery">
                     <div className="big-gallery-image w-inline-block">
-                        <img className="big-image w-inline-block" src={image5} alt="daycare programs at Bright Smiles Home Childcare" />
+                        <img className="small-image img-position" src={image3} alt="daycare programs at Bright Smiles Home Childcare" />
+                        <img className="big-image w-inline-block" src={image5} alt="daycare programs at Bright Smiles Home Childcare" /> 
                     </div>
                 </div>
             </div>
