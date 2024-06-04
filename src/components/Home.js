@@ -117,7 +117,7 @@ const Home = () => {
                     <h1 className="hero-bigger">{subtitles[backgroundIndex]}</h1>
                     <p className="hero-p">{descriptions[backgroundIndex]}</p>
                     <div className="enroll-kid">
-                        <a className="hero-button" href="/contact">Enroll your kid</a>
+                        <a className="hero-button" href="/enroll">Enroll your kid</a>
                         {/* <FontAwesomeIcon icon={faPhone} className="contact-icon" /> */}
                         {/* <a href="tel:+18018158685" className="contact-icon">(206) 483-4129</a> */}
                     </div>
