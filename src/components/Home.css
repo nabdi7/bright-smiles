@@ -107,6 +107,7 @@ body {
     /* margin-top: 20px;  */
     align-self: flex-start; 
     margin: 5px  40px 0 0;
+    cursor: pointer;
 }
 
 .enroll-kid {
