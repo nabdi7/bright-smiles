@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, Element } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './Home.css';
 import emailjs from 'emailjs-com'; 
@@ -102,6 +103,11 @@ const Home = () => {
     const handleSectionChange = (section) => {
         setActiveSection(section);
     };
+    const navigate = useNavigate();
+    const scrollToServices = (event) => {
+        navigate('/enroll');
+        window.scrollTo(0, 0);
+    };
 
     return (
         <>
@@ -117,7 +123,9 @@ const Home = () => {
                     <h1 className="hero-bigger">{subtitles[backgroundIndex]}</h1>
                     <p className="hero-p">{descriptions[backgroundIndex]}</p>
                     <div className="enroll-kid">
-                        <a className="hero-button" href="/enroll">Enroll your kid</a>
+                        <Link to="/enroll" className='hero-button' onClick={scrollToServices}>
+                            Enroll your kid
+                        </Link>
                         {/* <FontAwesomeIcon icon={faPhone} className="contact-icon" /> */}
                         {/* <a href="tel:+18018158685" className="contact-icon">(206) 483-4129</a> */}
                     </div>
