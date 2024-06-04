@@ -3,8 +3,8 @@ import { Link, Element } from 'react-scroll';
 import { Helmet } from 'react-helmet';
 import './Home.css';
 import emailjs from 'emailjs-com'; 
-import banner from '../images/kid8.png';
-import banner2 from '../images/kid2.png';
+import banner from '../images/img5.png';
+import banner2 from '../images/gallery1.png';
 import certifiedImage from '../images/statecertified.png';
 import card1 from '../images/card1.webp';
 import card2 from '../images/card2.webp';
@@ -13,12 +13,9 @@ import card4 from '../images/card6.webp'
 import card5 from '../images/card5.webp'
 import card6 from '../images/card4.webp'
 import image1 from '../images/gallery1.jpg';
-import image2 from '../images/gallery2.jpg';
+import image2 from '../images/img12.JPG';
 import image3 from '../images/img1.jpg';
-import image4 from '../images/gallery4.jpg';
 import image5 from '../images/gallery5.jpg';
-import image6 from '../images/img2.jpg';
-import image7 from '../images/img11.jpg';
 import image8 from '../images/img8.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullhorn, faCheck } from '@fortawesome/free-solid-svg-icons';
@@ -297,18 +294,15 @@ const Home = () => {
                     <div className="medium-gallery-image w-inline-block">
                         <img className="medium-image" src={image1} alt="daycare programs at Bright Smiles Home Childcare" />
                         <img className="small-image img-position" src={image8} alt="daycare programs at Bright Smiles Home Childcare" />
-                        <img className="medium-image" src={image4} alt="daycare programs at Bright Smiles Home Childcare" />
                     </div>
                     <div className="small-gallery-image w-inline-block">
-                        <img className="small-image" src={image2} alt="daycare programs at Bright Smiles Home Childcare" />
-                        <img className="small-image" src={image7} alt="daycare programs at Bright Smiles Home Childcare" />                        
-                        <img className="small-image img-position" src={image6} alt="daycare programs at Bright Smiles Home Childcare" />
+                        <img className="small-image img-position" src={image3} alt="daycare programs at Bright Smiles Home Childcare" />
+                        <img className="small-image img-position" src={image2} alt="daycare programs at Bright Smiles Home Childcare" />
 
                     </div>
                 </div>
                 <div className="right-gallery">
                     <div className="big-gallery-image w-inline-block">
-                        <img className="small-image img-position" src={image3} alt="daycare programs at Bright Smiles Home Childcare" />
                         <img className="big-image w-inline-block" src={image5} alt="daycare programs at Bright Smiles Home Childcare" /> 
                     </div>
                 </div>

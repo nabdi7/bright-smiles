@@ -19,14 +19,13 @@ body {
     /* background-color: #f0f0f0; */
 }
 .backgroundImage {
-    width: 100%;
-    height: 300px;
-    background-image: url('../images/gallery1.jpg'); /* Update this with your image path */
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: #037d3e; */
+    background-color: #006666;
+    max-width: 100%;
+    width: 100%;
 }
 .global-title {
     text-align: center;

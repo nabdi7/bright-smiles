@@ -36,7 +36,7 @@ const Navbar = () => {
   
   return (
     <>
-      <header class="sub-header"> 
+      {/* <header class="sub-header"> 
         <div class="container"> 
               <ul class="info">
                 <li><FontAwesomeIcon icon={faEnvelope} className="icon-style" /> <a href="mailto:brightchildcare98@gmail.com">Brightchildcare98@gmail.Com</a></li>
@@ -45,11 +45,11 @@ const Navbar = () => {
             <div class="col-lg-4 col-md-4">
               <ul class="social-links">
                 <li><a href="tel:+12064834129"><FontAwesomeIcon icon={faPhone} className="icon-style"/> </a> (206) 483-4129</li>
-                {/* <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /> </a></li>*/}
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /> </a></li>
               </ul>
             </div>
         </div>
-      </header>
+      </header> */}
 
       {/* navbar  */}
       <nav className='navbar'>
