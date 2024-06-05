@@ -1,11 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, Element } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './Home.css';
 import emailjs from 'emailjs-com'; 
 import banner from '../images/img5.png';
-import banner2 from '../images/gallery1.png';
 import certifiedImage from '../images/statecertified.png';
 import card1 from '../images/card1.webp';
 import card2 from '../images/card2.webp';
@@ -14,7 +13,7 @@ import card4 from '../images/card6.webp'
 import card5 from '../images/card5.webp'
 import card6 from '../images/card4.webp'
 import image1 from '../images/gallery1.jpg';
-import image2 from '../images/img12.JPG';
+import image2 from '../images/img12.jpg';
 import image3 from '../images/img1.jpg';
 import image5 from '../images/gallery5.jpg';
 import image8 from '../images/img8.jpg';
@@ -64,37 +63,6 @@ const Home = () => {
           );
     };
 
-    const [backgroundIndex, setBackgroundIndex] = useState(0);
-    const titles = [
-        "Bright Smiles Childcare",
-        "Creative Minds Preschool",
-    ];
-
-    const subtitles = [
-        "Discover, Explore, and Learn Together",
-        "Explore, Learn, and Grow Together",
-    ];
-
-    const descriptions = [
-        "At Bright Smiles Childcare, we provide a nurturing and safe environment where young minds can flourish.",
-        "We're dedicated to providing a loving and secure space where young minds can grow.",
-    ];
-
-    const images = [
-        banner, 
-        banner2,
-    ];
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setBackgroundIndex(prevIndex =>
-                prevIndex === titles.length - 1 ? 0 : prevIndex + 1
-            );
-        }, 5000);
-
-        return () => clearInterval(intervalId);
-    }, [titles.length]);
-
     const [heroRef, heroInView] = useInView({ triggerOnce: true });
     const [aboutRef, aboutInView] = useInView({ triggerOnce: true });
     const [servicesRef, servicesInView] = useInView({ triggerOnce: true });
@@ -104,8 +72,8 @@ const Home = () => {
         setActiveSection(section);
     };
     const navigate = useNavigate();
-    const scrollToServices = (event) => {
-        navigate('/enroll');
+    const scrollToContact = (event) => {
+        navigate('/contact');
         window.scrollTo(0, 0);
     };
 
@@ -119,11 +87,11 @@ const Home = () => {
         <div className="hero-container">
             <div className="hero-row">
                 <div className={`left fade-in ${heroInView ? 'visible' : ''}`} ref={heroRef}>
-                    <h4 className="hero-title">{titles[backgroundIndex]}</h4>
-                    <h1 className="hero-bigger">{subtitles[backgroundIndex]}</h1>
-                    <p className="hero-p">{descriptions[backgroundIndex]}</p>
+                    <h1 className="hero-title">Bright Smiles Childcare</h1>
+                    <h2 className="hero-bigger">Discover, Explore, and Learn Together</h2>
+                    <p className="hero-p">At Bright Smiles Childcare, we provide a nurturing and safe environment where young minds can flourish.</p>
                     <div className="enroll-kid">
-                        <Link to="/enroll" className='hero-button' onClick={scrollToServices}>
+                        <Link to="/contact" className='hero-button' onClick={scrollToContact}>
                             Enroll your kid
                         </Link>
                         {/* <FontAwesomeIcon icon={faPhone} className="contact-icon" /> */}
@@ -131,7 +99,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className={`right slide-from-right ${heroInView ? 'visible' : ''}`} ref={heroRef}>
-                    <img src={images[backgroundIndex]} alt="Bright Smiles Home Childcare" />
+                    <img src={banner} alt="Bright Smiles Home Childcare" />
                 </div>
             </div>
         </div>
@@ -358,7 +326,9 @@ const Home = () => {
                             <li><FontAwesomeIcon icon={faCheck} className="check-mark" /> Interactive Learning Environments</li>
                             <li><FontAwesomeIcon icon={faCheck} className="check-mark" /> Nutritious Meals and Snacks Provided</li>
                         </ul>
-                        <button className="book-now-btn">Book Now</button>
+                        <Link to="/contact">
+                            <button className="book-now-btn" onClick={scrollToContact}>Book Now</button>
+                        </Link>
                     </div>
                     <div className="booking-form">
                         <h2 className="form-title">Get In Touch</h2>

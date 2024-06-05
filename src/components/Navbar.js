@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from '../images/logo10.png';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLocationDot, faBars, faTimes, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 // import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar = () => {
@@ -84,10 +84,15 @@ const Navbar = () => {
                     Programs
                   </ScrollLink>
                 </li>
-                <li>
+                {/* <li>
                   <ScrollLink to='contactSection' smooth={true} duration={1000} className="bn59" onClick={closeMenu}>
                     Contact
                   </ScrollLink>
+                </li> */}
+                <li>
+                  <Link to='contact' smooth={true} duration={1000} className="bn59" onClick={closeMenu}>
+                    Contact
+                  </Link>
                 </li>
               </>
             ) : (
@@ -96,7 +101,7 @@ const Navbar = () => {
                 <li><Link to='/' onClick={closeMenu}>Home </Link> </li>
                 <li><Link to='/' onClick={closeMenu}> About </Link></li>
                 <li><Link to='/' onClick={closeMenu}> Programs</Link></li>
-                <li><Link to='/' onClick={closeMenu} className="bn59"> Contact </Link></li>
+                <li><Link to='/contact' onClick={closeMenu} className="bn59"> Contact </Link></li>
               </>
             )}
           </ul>
