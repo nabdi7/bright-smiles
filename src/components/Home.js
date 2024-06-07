@@ -189,7 +189,7 @@ const Home = () => {
                 {activeSection === 'services' && (
                     <Helmet>
                     <title>Our Services - Bright Smiles Home Childcare</title>
-                    <meta name="description" content="Explore our comprehensive childcare and preschool services at Bright Smiles Home Childcare in Auburn, WA." />
+                    <meta name="description" content="Explore our comprehensive childcare and educational services at Bright Smiles Home Childcare in Auburn, WA." />
                     </Helmet>
                 )}
                 <div className="base-container width-container">
