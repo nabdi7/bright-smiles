@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './Home.css';
 import emailjs from 'emailjs-com'; 
-import banner from '../images/img5.png';
+import banner from '../images/banner1.png';
 import certifiedImage from '../images/statecertified.png';
 import card1 from '../images/card1.webp';
 import card2 from '../images/card2.webp';
@@ -13,7 +13,7 @@ import card4 from '../images/card6.webp'
 import card5 from '../images/card5.webp'
 import card6 from '../images/card4.webp'
 import image1 from '../images/gallery1.jpg';
-import image2 from '../images/img12.jpg';
+import image2 from '../images/img141.jpeg';
 import image3 from '../images/img1.jpg';
 import image5 from '../images/gallery5.jpg';
 import image8 from '../images/img8.jpg';
@@ -119,7 +119,7 @@ const Home = () => {
                     <div className="leftSide"> 
                         <h1> Bright Smiles Childcare </h1>
 
-                        <p>Welcome to Bright Smiles Home Childcare, a nurturing and supportive learning environment for children in Auburn, WA. We pride ourselves on providing high-quality childcare and preschool services in a warm and inviting atmosphere.</p>
+                        <p>Welcome to Bright Smiles Home Childcare, a nurturing and supportive learning environment for children in Auburn, WA. We pride ourselves on providing high-quality childcare and education services in a warm and inviting atmosphere.</p>
                         <p>At Bright Smiles Home Childcare, we believe in fostering a love for learning through play-based activities and hands-on experiences. Our dedicated team of educators focuses on nurturing each child's individual interests, talents, and learning styles.</p>
                         <p>We are committed to promoting social, emotional, and cognitive development in children, helping them build confidence and independence. With our comprehensive curriculum and engaging learning opportunities, we strive to prepare children for success in school and in life.</p>
                         <p>Join us at Bright Smiles Home Childcare, where every child is valued, supported and encouraged. Contact us at <a href='tel:+12064834129'><b>(206)483-4129</b></a> or <a href="mailto:brightchildcare98@gmail.com"><b>brightchildcare98@gmail.Com</b></a></p>
@@ -127,6 +127,7 @@ const Home = () => {
                         <ul>
                             <li>Comprehensive and Affordable Tuition</li>
                             <li>Safe &amp; Secure</li>
+                            <li>Education as the Core Foundation</li>
                             <li>Engaging and Developmentally Appropriate Curriculum</li>
                             <li>Healthy and Nutritious Meals and Snacks Provided Daily</li>
                             <li>Qualified, Caring, and Experienced Staff</li>

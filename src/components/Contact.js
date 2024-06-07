@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import "./Contact.css";
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faMapMarkerAlt, faClock} from '@fortawesome/free-solid-svg-icons';
 
 
 const Contact = () => {
@@ -50,7 +50,7 @@ const Contact = () => {
                    
                         {/* <h3 className='content-title'>Are you ready to get started?</h3>
                         <p className='content-description'>If you have questions about the opportunities available in our programs, feel free to send us a message. We will get back to you as soon as possible.</p> */}
-                        <h3 className='content-title'>Bright Smiles Home childcare</h3>
+                        {/* <h3 className='content-title'>Bright Smiles Home childcare</h3> */}
                         <div className="information">
                             <FontAwesomeIcon icon={faPhone} className="icon" />
                             <div className="information-text">
@@ -73,7 +73,14 @@ const Contact = () => {
                                 <p className='content-info'>Address</p>
                             </div>
                         </div>
-                   
+                        
+                        <div className="information">
+                            <FontAwesomeIcon icon={faClock} className="icon"/>
+                            <div className="information-text"> 
+                                <p className='content-description'><b>Open Daily 5:00 AM - 9:00 PM</b></p>
+                                <p className='content-info'>Hours</p>
+                            </div>
+                        </div>
 
                     {/* <div className='content-box'>
                         <h3 className='content-title'>Hours of operation</h3>

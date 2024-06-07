@@ -34,26 +34,15 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footer-col">
-                        {/* <h4>Bright Smiles Childcare</h4> */}
-                        {/* <div className="logo">
-                            {/* <img
-                                src={logo}
-                                // width='250px'
-                                // height='auto'
-                                // max-width='100%'
-                                // max-height='100%'
-                                alt='Bright Smiles Home Childcare'
-                            /> 
-                        </div> */}
                         <h3>Follow Us</h3>
                         <div className="social-links">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                            <a href="https://facebook.com/brightsmileshomechildcare" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
                                 <FontAwesomeIcon icon={faFacebookF} />
                             </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                            <a href="https://instagram.com/brightsmileshomechildcare" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Youtube"> 
+                            <a href="https://youtube.com/brightsmileshomechildcare" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Youtube"> 
                                 <FontAwesomeIcon icon={faYoutube} />
                             </a>
                         </div>
