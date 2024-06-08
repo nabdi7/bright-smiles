@@ -20,6 +20,7 @@ import image8 from '../images/img8.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullhorn, faCheck } from '@fortawesome/free-solid-svg-icons';
 import applicationPDF from '../application.pdf';
+import handbookPDF from '../brightsmileshandbook.pdf';
 import { useInView } from 'react-intersection-observer';
 
 const Home = () => { 
@@ -28,7 +29,9 @@ const Home = () => {
     const handleDownload = () => {
         window.open(applicationPDF, '_blank');
     };
-
+    const handleHandbook = () => {
+        window.open(handbookPDF, '_blank');
+    };
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [contactMessage, setContactMessage] = useState("");
     const [user_name, setName] = useState(""); 
@@ -122,7 +125,7 @@ const Home = () => {
                         <p>Welcome to Bright Smiles Home Childcare, a nurturing and supportive learning environment for children in Auburn, WA. We pride ourselves on providing high-quality childcare and education services in a warm and inviting atmosphere.</p>
                         <p>At Bright Smiles Home Childcare, we believe in fostering a love for learning through play-based activities and hands-on experiences. Our dedicated team of educators focuses on nurturing each child's individual interests, talents, and learning styles.</p>
                         <p>We are committed to promoting social, emotional, and cognitive development in children, helping them build confidence and independence. With our comprehensive curriculum and engaging learning opportunities, we strive to prepare children for success in school and in life.</p>
-                        <p>Join us at Bright Smiles Home Childcare, where every child is valued, supported and encouraged. Contact us at <a href='tel:+12064834129'><b>(206)483-4129</b></a> or <a href="mailto:brightchildcare98@gmail.com"><b>brightchildcare98@gmail.Com</b></a></p>
+                        <p>Join us at Bright Smiles Home Childcare, where every child is valued, supported and encouraged. Contact us at <a href='tel:+12064834129'><b>(206)483-4129</b></a> or <a href="mailto:brightchildcare98@gmail.com"><b>brightchildcare98@gmail.com</b></a></p>
                         <h2><strong>Highlights/Quick Facts:</strong></h2>
                         <ul>
                             <li>Comprehensive and Affordable Tuition</li>
@@ -145,6 +148,7 @@ const Home = () => {
                             <li><span><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> Enrollment Open Now for 2023-2024. Contact us Now!!</span></li>
                             <li><span><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> You can now download enrollment forms below!!</span></li>
                             <li><div className="download-link" onClick={handleDownload}>Download Application</div></li>
+                            <li><div className="download-link" onClick={handleHandbook}>Download Handbook</div></li>
                         </ul>
 
                     </div>	
@@ -177,6 +181,8 @@ const Home = () => {
                     <p> Affordable Tuition with Convenient Payment Options</p>
                     <p> Healthy Meals and Snacks Provided Daily</p>
                     <p> <a href="/" previewlistener="true">Learn more about us</a></p>
+                    {/* <p><a href={handbookPDF} target="_blank" rel="noopener noreferrer">Preview our handbook</a></p> */}
+                    {/* <p> <div className="handbook" onClick={handleHandbook}>Preview Handbook</div></p> */}
                 </div>
             </div>
         
