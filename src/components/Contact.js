@@ -10,47 +10,47 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-  const [faqData, setFaqData] = useState([
-    {
-      question: "Can we schedule a tour of the facility before enrolling?",
-      answer:
-        "Yes, we would be delighted to give you a tour of our facility. Please feel free to contact us at (206) 483-4129 to schedule a convenient time for your visit.",
-      isOpen: false, // Initialize the isOpen state as false for all questions
-    },
-    {
-      question: "What forms of payment do you accept?",
-      answer:
-        "We accept both private pay and payments through DCYF (Department of Children, Youth & Families). Our aim is to provide flexible payment options that suit the needs of our families.",
-      isOpen: false,
-    },
-    {
-      question: "Do you provide meals and snacks?",
-      answer:
-        "Yes. We take pride in offering nutritious meals and snacks to fuel your child's day. Our menus are carefully curated to meet dietary needs and promote healthy eating habits.",
-      isOpen: false,
-    },
-    {
-      question: "What are your opening hours?",
-      answer: "We are open every day from 5:00 AM to 9:00 PM.",
-      isOpen: false,
-    },
-    {
-      question: "Do you offer part-time or full-time enrollment options?",
-      answer:
-        "Yes, we offer both part-time and full-time enrollment options. Please reach out to us to discuss which option works best for you.",
-      isOpen: false,
-    },
-  ]);
+  // const [faqData, setFaqData] = useState([
+  //   {
+  //     question: "Can we schedule a tour of the facility before enrolling?",
+  //     answer:
+  //       "Yes, we would be delighted to give you a tour of our facility. Please feel free to contact us at (206) 483-4129 to schedule a convenient time for your visit.",
+  //     isOpen: false, 
+  //   },
+  //   {
+  //     question: "What forms of payment do you accept?",
+  //     answer:
+  //       "We accept both private pay and payments through DCYF (Department of Children, Youth & Families). Our aim is to provide flexible payment options that suit the needs of our families.",
+  //     isOpen: false,
+  //   },
+  //   {
+  //     question: "Do you provide meals and snacks?",
+  //     answer:
+  //       "Yes. We take pride in offering nutritious meals and snacks to fuel your child's day. Our menus are carefully curated to meet dietary needs and promote healthy eating habits.",
+  //     isOpen: false,
+  //   },
+  //   {
+  //     question: "What are your opening hours?",
+  //     answer: "We are open every day from 5:00 AM to 9:00 PM.",
+  //     isOpen: false,
+  //   },
+  //   {
+  //     question: "Do you offer part-time or full-time enrollment options?",
+  //     answer:
+  //       "Yes, we offer both part-time and full-time enrollment options. Please reach out to us to discuss which option works best for you.",
+  //     isOpen: false,
+  //   },
+  // ]);
 
-  const [hovered, setHovered] = useState(null);
-  // Function to toggle the visibility of the answer
-  const toggleAnswer = (index) => {
-    setFaqData((prevFaqData) =>
-      prevFaqData.map((item, i) =>
-        i === index ? { ...item, isOpen: !item.isOpen } : item
-      )
-    );
-  };
+  // const [hovered, setHovered] = useState(null);
+  // // Function to toggle the visibility of the answer
+  // const toggleAnswer = (index) => {
+  //   setFaqData((prevFaqData) =>
+  //     prevFaqData.map((item, i) =>
+  //       i === index ? { ...item, isOpen: !item.isOpen } : item
+  //     )
+  //   );
+  // };
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [contactMessage, setContactMessage] = useState("");
   const [user_name, setName] = useState("");
@@ -189,7 +189,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* faq */}
+      {/* faq 
       <section className="faq-section">
         <h2 className="questions">Questions</h2>
         <h4 className="freq-asked">Frequently asked, fully answered.</h4>
@@ -207,7 +207,7 @@ const Contact = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section>*/}
 
       <div className="location">
         <div className="location-map">
