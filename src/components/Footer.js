@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="copyright">
-                <p>©{new Date().getFullYear()} Bright Smiles Home Childcare. <a href="https://qualitydesigns.site/" target="_blank" rel="noopener noreferrer">Quality Designs</a></p>
+                <p>©{new Date().getFullYear()} Bright Smiles Home Childcare. <a href="https://qdwebdesigns.com" target="_blank" rel="noopener noreferrer">QD Web Designs</a></p>
             </div>
         </>
     );
